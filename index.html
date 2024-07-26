@@ -3,23 +3,422 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="" />
+  <link rel="icon" type="image/svg+xml" href="./assets/fav-icon.webp" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link href="./build/index.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="./build/output.css" rel="stylesheet" />
   <link href="./css/hamburger.css" rel="stylesheet" />
-  <title>Siqueira</title>
+  <title>Siqueira - 15</title>
 </head>
 
 <body>
-  
-  <div class="bg-[#0042c1] flex justify-center items-center w-full h-full">
-    <p class="font-roboto font-bold text-5xl text-white">SITE EM DESENVOLVIMENTO</p>
+  <div>
+    <header class="bg-[#0042c1] z-50" id="home">
+      <nav class="bg-transparent w-full">
+        <div class="container mx-auto px-6 py-4 md:flex md:items-center md:justify-between">
+          <div class="flex items-center justify-between">
+            <div class="py-3">
+              <a class="flex items-center cursor-pointer" href="/">
+                <img class="w-48" src="./assets/logo-animacao-siqueira.gif" alt="logo-siqueira" />
+              </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="hamburger hamburger--collapse" type="button" id="btn-mobile">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+
+          <!-- Mobile Menu open: 'block', Menu closed: 'hidden' -->
+          <nav class="hidden items-center pt-8 md:pt-0 md:flex" id="menu-spande">
+            <ul class="flex flex-col md:mx-6 md:flex-row menu-ativo">
+              <li>
+                <a class="duration-200 transform my-1 text-sm font-medium text-white hover:text-green-500 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear font-roboto"
+                  href="/">INICIO</a>
+              </li>
+
+              <li>
+                <a class="duration-200 transform my-1 text-sm font-medium text-white hover:text-green-500 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear font-roboto"
+                  href="#sobre">SOBRE</a>
+              </li>
+
+              <li>
+                <a class="duration-200 transform my-1 text-sm font-medium text-white hover:text-green-500 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear font-roboto"
+                  href="#destaque">DESTAQUE</a>
+              </li>
+
+              <li>
+                <a class="duration-200 transform my-1 text-sm font-medium text-white hover:text-green-500 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear font-roboto"
+                  href="/revista">REVISTA</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+    </header>
+    <div class="w-full bg-blue-400 flex justify-center items-center">
+      <img class="w-full object-cover object-top" src="./assets/banner-site-top.jpg" alt="banner-principal" />
+    </div>
+
+    <!-- SOBRE -->
+    <div class="container mx-auto px-4 py-5 md:py-24 scroll-mt-px-[400px]" id="sobre">
+      <p class="text-green-700 uppercase font-poppins font-bold text-center mb-5 md:text-3xl">
+        SOBRE
+      </p>
+      <p class="font-roboto text-sm md:text-base lg:text-xl lg:text-justify">
+        Alexandre França Siqueira, prefeito de Tucuruí, no estado do Pará, é
+        um empresário de sucesso que, após cumprir uma notável missão no setor
+        privado, se destaca na política. Sob sua liderança, e com a parceria
+        do governo federal, especialmente com o apoio da deputada federal
+        Andréia Siqueira, e do governo estadual, liderado pelo governador
+        Helder Barbalho, Tucuruí recebeu investimentos superiores a 2 bilhões
+        de reais, impulsionando significativamente o desenvolvimento da
+        cidade. O prefeito Alexandre Siqueira é reconhecido por sua atuação
+        incansável e seu compromisso inabalável com a cidade de Tucuruí. Entre
+        os projetos de sua gestão, destacam-se iniciativas na área social como
+        “Bebê a Bordo”, “CredPopular” e “Oficina Chocolate”. Além disso, ele
+        transformou grandes obras de pavimentação em diversos bairros que
+        estavam esquecidos, estabeleceu quilômetros de asfalto. Um sonho de
+        décadas da população, Alexandre implementou o polo industrial e a
+        construção de um frigorífico, gerando emprego e renda para a população
+        local. Na área do turismo e cultura, Alexandre Siqueira resgatou
+        eventos tradicionais e criou novas atrações que colocaram Tucuruí no
+        mapa turístico mundial. Festividades como o Carnaval, o Carnaré
+        (Carnaval fora de época) e o famoso “Amazônia Open”, evento de grande
+        porte que atrai turistas de todas as partes, são apenas alguns
+        exemplos do sucesso de sua gestão cultural. Na educação, a
+        administração de Siqueira reformou obras inacabadas de gestões
+        anteriores, renovou diversas escolas e quadras, implementou turnos
+        integrais nas escolas, garantiu que todos os alunos da rede pública
+        recebessem uniformes. Promoveu treinamentos para professores
+        mediadores visando a inclusão de crianças atípicas. Além disso, a
+        merenda escolar de qualidade, supervisionada por nutricionistas,
+        assegura uma alimentação balanceada e saudável para os estudantes. Na
+        saúde, a gestão de Alexandre Siqueira promoveu uma verdadeira
+        revolução nos serviços prestados à comunidade. Com horários estendidos
+        das 18:00 às 22:00 de segunda a sexta-feira nas unidades básicas de
+        saúde, incluindo a especialidade de cardiologia, a população tem
+        acesso facilitado a cuidados médicos essenciais. Um marco em sua
+        gestão foi a realização de mais de 1.000 cirurgias eletivas,
+        resultando na eliminação da fila de espera, além das cirurgias
+        oftalmológicas que oferecem todo o suporte necessário aos pacientes.
+        Essas melhorias nos atendimentos e os constantes treinamentos para
+        profissionais da área resultaram em uma qualidade de serviço sem
+        precedentes. Com esses esforços, Alexandre Siqueira demonstra
+        diariamente seu compromisso com o bem-estar e o progresso de Tucuruí,
+        deixando um legado de desenvolvimento e prosperidade.
+      </p>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="flex w-full justify-center">
+      <iframe class="mt-10" width="100%" height="515" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+      </iframe>
+    </div>
   </div>
 
+  <!-- DESTAQUE -->
+  <div class="container mx-auto px-4 py-2 md:py-24" id="destaque">
+    <div class="mb-8 lg:mb-32">
+      <p class="text-green-700 uppercase font-roboto font-bold text-center mb-5 md:text-3xl">
+        DESTAQUE
+      </p>
+    </div>
+    <div class="flex flex-col xl:gap-y-32">
+      <div class="flex flex-col xl:flex-row-reverse  gap-x-10">
+        <img src="./assets/inauguração-cais.jpg" alt="orla-tucurui" class="w-full xl:max-w-[530px]" />
+        <div>
+          <div class="barra-identificacao">
+            <div class="nome">Inauguração Orla</div>
+            <div class="borda"></div>
+          </div>
+
+          <p class="font-roboto py-5 text-sm md:text-base lg:text-xl lg:text-justify">
+            A colaboração entre a Prefeitura Municipal e o Governo do Pará
+            culminou na inauguração da nova orla de Tucuruí em dezembro de
+            2023. Situada às margens do Rio Tocantins, esta nova
+            infraestrutura com 1,3 km de extensão se tornou uma das principais
+            atrações turísticas da cidade, oferecendo uma área vibrante para
+            lazer, turismo e eventos culturais. Durante a fase de construção,
+            o projeto gerou 112 empregos diretos na região e garantiu a
+            realização de serviços de revitalização e urbanização. Com isso, o
+            espaço agora proporciona uma melhor qualidade de vida para os
+            moradores e oferece conforto e beleza aos visitantes da Região do
+            Lago de Tucuruí. (orla de Tucuruí)
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col xl:flex-row gap-x-10">
+        <img src="./assets/inauguração-feira-municipal.jpg" alt="feira-municipal-tucurui"
+          class="w-full xl:max-w-[530px]"/>
+        <div>
+     
+          <div class="barra-identificacao">
+            <div class="nome">Inauguração da Feira Municipal</div>
+            <div class="borda"></div>
+          </div>
+          <p class="font-roboto py-5 text-sm md:text-base lg:text-xl lg:text-justify">
+            Inauguração da Nova Feira Municipal. Em 2022, a Prefeitura
+            Municipal, em parceria com o Governo do Estado, iniciou a
+            reconstrução da Feira Municipal, um projeto que revitalizou o
+            comércio local e promoveu a cultura regional. Sob a liderança do
+            prefeito Alexandre Siqueira, a iniciativa transformou o local em
+            um ponto de encontro vibrante, onde a população pode realizar suas
+            compras e participar de atividades culturais e sociais. O prefeito
+            Alexandre Siqueira foi uma figura central neste projeto,
+            trabalhando incansavelmente para garantir que a obra fosse
+            concluída dentro do prazo e com a qualidade esperada. Ele destacou
+            a importância da nova feira para o desenvolvimento econômico e
+            turístico da cidade, ressaltando que o espaço revitalizado atrairá
+            visitantes e estimulará o comércio local. Concluída em 2024, a
+            nova Feira Municipal se tornou um marco no plano de
+            desenvolvimento urbano da gestão de Alexandre Siqueira,
+            reafirmando seu compromisso com o progresso e a valorização
+            da cultura local.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col xl:flex-row-reverse  gap-x-10">
+        <img src="./assets/asfalto-santa-isabel.jpg" alt="asfalto-santa-isabel" class="w-full xl:max-w-[530px]" />
+        <div>
+          <div class="barra-identificacao">
+            <div class="nome">Asfalto Santa Isabel</div>
+            <div class="borda"></div>
+          </div>
+          <p class="font-roboto py-5 text-sm md:text-base xl:text-xl xl:text-justify">
+            Transformação no Bairro Santa Isabel. Após anos de abandono, o
+            bairro Santa Isabel está vivenciando uma transformação
+            significativa graças a uma obra monumental de infraestrutura. As
+            melhorias abrangem desde a instalação de sistemas de drenagem até
+            o asfaltamento de ruas e aprimoramentos na mobilidade urbana.
+            Esses avanços estão não apenas modernizando a paisagem do bairro,
+            mas também elevando a qualidade de vida de seus moradores, que
+            agora desfrutam de maior segurança e conforto. O projeto trouxe
+            soluções para problemas antigos, como alagamentos e falta de
+            acessibilidade, que prejudicavam a comunidade. Com a nova
+            pavimentação e infraestrutura, Santa Isabel se destaca como um
+            exemplo de revitalização urbana, proporcionando um futuro mais
+            seguro e acessível para todos os residentes.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col xl:flex-row gap-x-10">
+        <img src="./assets/inauguração-praca-tcunare.jpg" alt="inauguração-praça-tucunare"
+          class="w-full xl:max-w-[530px]" />
+        <div>
+          <div class="barra-identificacao">
+            <div class="nome">Inauguração Praça do Tucunaré</div>
+            <div class="borda"></div>
+          </div>
+          <p class="font-roboto py-5 text-sm md:text-base xl:text-xl xl:text-justify">
+            Inauguração da Praça do Tucunaré em Tucuruí A cidade de Tucuruí
+            celebrou um momento histórico com a inauguração da Praça do
+            Tucunaré, um novo ponto turístico que promete ser um marco de
+            lazer e encontro para a população. Na noite de quinta-feira, 16 de
+            julho, aproximadamente 4,5 mil pessoas participaram do evento de
+            inauguração, que contou com a presença de autoridades locais e
+            estaduais. Entre os presentes estavam o Governador do Pará, Helder
+            Barbalho, a Primeira Dama do Estado, Dra. Daniela Barbalho, a
+            Deputada Federal Andréia Siqueira, o Prefeito de Tucuruí,
+            Alexandre Siqueira, e o Vice-Prefeito Jairo Holanda, além de
+            vereadores e secretários municipais.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col xl:flex-row-reverse  gap-x-10">
+        <img src="./assets/inauguracao-predio-cejus.jpg" alt="inauguracao-predio-cejus"
+          class="w-full xl:max-w-[530px]" />
+        <div>
+          <div class="barra-identificacao">
+            <div class="nome">Inauguração Prédio CEJUS</div>
+            <div class="borda"></div>
+          </div>
+          <p class="font-roboto py-5 text-sm md:text-base xl:text-xl xl:text-justify">
+            Inauguração do Novo Centro Judiciário de Solução de Conflitos e
+            Cidadania (CEJUSC) em Tucuruí O Centro Judiciário de Solução de
+            Conflitos e Cidadania (CEJUSC) de Tucuruí ganhou um novo espaço
+            moderno e acessível, inaugurado no dia 10 de maio de 2024. A
+            cerimônia de inauguração contou com a presença do Prefeito de
+            Tucuruí, Alexandre Siqueira, da deputada federal Andréia Siqueira,
+            do presidente da Câmara de Tucuruí, Weber Galvão, da
+            Desembargadora Dra. Dahil Paraense, do juiz de Direito e
+            coordenador do CEJUSC, Dr. Rafael Maia, do juiz titular da Vara
+            Criminal, Dr. Pedro Enrico de Oliveira, além de magistrados da
+            cidade e trabalhadores apenados e egressos do sistema penal. O
+            CEJUSC, fruto de uma parceria entre a Prefeitura Municipal de
+            Tucuruí (PMT) e o Tribunal de Justiça do Pará (TJPA), oferece à
+            população um espaço dedicado à resolução de conflitos de forma
+            amigável e acessível. Localizado no bairro central de Tucuruí, o
+            centro oferece assistência jurídica por meio de mediadores e
+            estagiários de Direito das faculdades locais. Além de proporcionar
+            soluções extrajudiciais rápidas e eficientes, o CEJUSC também atua
+            como um importante serviço de cidadania, promovendo a justiça e a
+            paz social na comunidade.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col xl:flex-row gap-x-10">
+        <img src="./assets/cirurgia-eletivas.jpg" alt="cirurgia-eletivas" class="w-full xl:max-w-[530px]" />
+        <div>
+          <div class="barra-identificacao">
+            <div class="nome">Comemoração as 1000 cirurgias eletivas</div>
+            <div class="borda"></div>
+          </div>
+          <p class="font-roboto py-5 text-sm md:text-base xl:text-xl xl:text-justify">
+            Tucuruí Zera Fila de Cirurgias Eletivas. Em setembro de 2023,
+            Tucuruí celebrou uma conquista notável no setor de saúde pública:
+            o Hospital Maternidade realizou mil cirurgias eletivas ao longo do
+            ano, eliminando uma fila de espera que se estendia por cinco anos.
+            Este marco representa o compromisso da administração municipal,
+            sob a liderança do prefeito Alexandre Siqueira, em oferecer
+            atendimento de qualidade e acessível a todos os cidadãos.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col xl:flex-row-reverse  gap-x-10">
+        <img src="./assets/posto-santa-isabel.jpg" alt="ampliacao-atendimento-saude" class="w-full xl:max-w-[530px]" />
+        <div>
+      
+          <div class="barra-identificacao">
+            <div class="nome">Ampliação dos Horários das Unidades de Saúde em Tucuruí</div>
+            <div class="borda"></div>
+          </div>
+          <p class="font-roboto py-5 text-sm md:text-base xl:text-xl xl:text-justify">
+            Ampliação dos Horários das Unidades de Saúde em Tucuruí A
+            Prefeitura Municipal de Tucuruí, sob a administração de Alexandre
+            Siqueira, implementou uma importante mudança nos postos de saúde:
+            agora eles funcionam com horário estendido até as 22h, de segunda
+            a sexta-feira. Essa medida visa atender especialmente a população
+            que trabalha durante o dia e tem dificuldade de buscar atendimento
+            médico em horários convencionais, além de reduzir a sobrecarga na
+            Unidade de Pronto Atendimento (UPA) da cidade. Essa ampliação
+            proporciona mais acessibilidade e conveniência, garantindo que
+            mais pessoas tenham acesso aos serviços de saúde
+            quando necessitarem.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col xl:flex-row gap-x-10">
+        <img src="./assets/una-faculdade-medicina.jpg" alt="una-faculdade-medicina" class="w-full xl:max-w-[530px]" />
+        <div>
+          <div class="barra-identificacao">
+            <div class="nome">Curso de medicina</div>
+            <div class="borda"></div>
+          </div>
+          <p class="font-roboto py-5 text-sm md:text-base xl:text-xl xl:text-justify">
+            Parceria para Curso de Medicina em Tucuruí. A Prefeitura de
+            Tucuruí firmou uma parceria com a Faculdade UNA para trazer um
+            curso de graduação em medicina para a cidade. A instituição já foi
+            equipada com toda a infraestrutura e os recursos necessários para
+            a formação dos futuros médicos. No momento, a Faculdade aguarda a
+            avaliação do Ministério da Educação (MEC) e do Instituto Nacional
+            de Estudos e Pesquisas Educacionais Anísio Teixeira. A previsão é
+            que as aulas comecem no segundo semestre de 2024. O prefeito
+            Alexandre Siqueira destacou que o curso de medicina é uma
+            conquista significativa para o município, oferecendo uma excelente
+            oportunidade de formação para os estudantes locais e fortalecendo
+            o setor de saúde na região.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col xl:flex-row-reverse  gap-x-10">
+        <img src="./assets/acoes-intinerantes.jpg" alt="acoes-intinerantes" class="w-full xl:max-w-[530px]" />
+        <div>
+          <div class="barra-identificacao">
+            <div class="nome">Ações Itinerantes</div>
+            <div class="borda"></div>
+          </div>
+          <p class="font-roboto py-5 text-sm md:text-base xl:text-xl xl:text-justify">
+            Importância das Ações Itinerantes para a População de Tucuruí. As
+            Ações Itinerantes implementadas por Alexandre Siqueira são
+            fundamentais para levar cidadania e serviços essenciais a todas as
+            áreas da cidade. Em 2023, essas ações foram ampliadas, tanto em
+            número quanto na variedade de serviços oferecidos, abrangendo
+            diversos bairros e beneficiando milhares de moradores. Sob a
+            gestão do prefeito Alexandre Siqueira, as iniciativas têm
+            proporcionado acesso a consultas médicas com especialistas,
+            exames, atendimento odontológico, assistência social, jurídica e
+            até serviços para animais domésticos, como consultas e castrações.
+            Essas ações são uma demonstração clara do compromisso do prefeito
+            em atender às necessidades da população, garantindo que os
+            serviços essenciais cheguem a todos os cantos de Tucuruí. No mês
+            de outubro, bairros como Serra Azul, Getat, Luz e Liberdade
+            receberam esses serviços gratuitos, beneficiando mais
+            de 3500 moradores.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REDES SOCIAIS -->
+  <div class="bg-blue-700 lg:flex lg:h-[400px] lg:gap-x-16 mt-10">
+    <img class="w-full object-cover object-top rounded-r-lg" src="./assets/DSC_1244.jpg" alt="criancas-alexandre" />
+    <div class="py-10 lg:w-full lg:flex lg:flex-col lg:justify-center items-start">
+      <span class="flex justify-center items-center flex-col lg:items-start">
+        <p class="font-light text-white md:text-5xl uppercase">siga nossas</p>
+        <p class="font-bold text-white md:text-5xl uppercase">
+          redes sociais
+        </p>
+      </span>
+      <span class="flex justify-center items-center mt-3 gap-x-3">
+        <a href="https://www.instagram.com/alexandresiqueira/" target="_blank"><i
+            class="fa-brands fa-instagram fa-2x text-white"></i></a>
+        <a href=""><i class="fa-brands fa-youtube fa-2x text-white" target="_blank"></i></a>
+        <a href="https://www.facebook.com/share/xEAWCWswwd3fgYn4/?mibextid=LQQJ4d" target="_blank"><i
+            class="fa-brands fa-facebook-f fa-2x text-white"></i></a>
+        <a href="" target="_blank"><i class="fa-brands fa-x-twitter fa-2x text-white"></i></a>
+      </span>
+    </div>
+  </div>
+  <footer>
+    <ul class="flex justify-center">
+      <li>
+        <img class="w-36" src="./assets/logos/mdb-02.png" alt="logo-mdb" />
+      </li>
+      <li>
+        <img class="w-36" src="./assets/logos/PODEMOS.png" alt="logo-podemos" />
+      </li>
+      <li>
+        <img class="w-36" src="./assets/logos/PSDB.png" alt="logo-psdb" />
+      </li>
+      <li>
+        <img class="w-36" src="./assets/logos/REPUBLICANOS.png" alt="logo-republicanos" />
+      </li>
+      <li>
+        <img class="w-36" src="./assets/logos/UNIÃO-BRASIL.png" alt="logo-uniao-brasil" />
+      </li>
+      <li>
+        <img class="w-36" src="./assets/logos/psd.png" alt="logo-psd" />
+      </li>
+      <li>
+        <img class="w-36" src="./assets/logos/Solidariedade.png" alt="logo-solidariedade" />
+      </li>
+      <li>
+        <img class="w-36" src="./assets/logos/Progressistas.png" alt="logo-progressista" />
+      </li>
+    </ul>
+    <div class="bg-[#0042c1] flex flex-col py-3">
+      <p class="text-white font-roboto font-light text-center text-xs px-5 md:text-sm">
+        © 2024 - MDB – Movimento Democrático do Brasil Tucuruí - Pará | Todos
+        os direitos reservados - CNPJ: 15.471.532/0001-84
+      </p>
+    </div>
+  </footer>
 
   <script type="module" src="./main.js"></script>
 </body>

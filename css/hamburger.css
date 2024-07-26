@@ -5,6 +5,46 @@
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
+ .barra-identificacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1D4DB0; /* cor azul de fundo */
+  color: white;
+  height: 70px; /* ajustável conforme necessário */
+ justify-content: space-between;
+}
+.nome {
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 9;
+  text-align: center;
+  width: 100%;
+  padding: 0 10px;
+}
+
+
+@media (min-width: 768px) {
+  .nome {
+    font-size: 18px;
+  }
+}
+
+
+.borda {
+  top: 0;
+  right: 0;
+  width: 40px; /* ajustável conforme necessário */
+  height: 100%;
+  background: linear-gradient(to top right, #007300, #FFD700);
+}
+
+
+@media (min-width: 768px) {
+  .borda {
+    width: 70px;
+  }
+}
 
  a.active {
   color: #22c55e; /* ou a cor desejada para o link ativo */
@@ -59,7 +99,7 @@
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
-    background-color: #000;
+    background-color: #fff;
   }
   
   .hamburger-box {
@@ -81,7 +121,7 @@
   .hamburger-inner::after {
     width: 30px;
     height: 4px;
-    background-color: #000;
+    background-color: #fff;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;

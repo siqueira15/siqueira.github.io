@@ -7,7 +7,8 @@ module.exports = {
         'xss': '468px',
       },
       fontFamily: {
-        roboto: ['Roboto']
+        roboto: ['Roboto'],
+        poppins: ['Poppins']
       },
       colors: {
         blackPiano:'#141414'
